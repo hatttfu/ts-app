@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 500px;
+    margin: 20px 0 0 100px;
+    cursor: pointer;
+}
+
+.blockWithButtonsLog {
+    margin: 20px 80px 0 0;
+    text-transform: uppercase;
+}
+
+.blockWithButtonsLog button {
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 11px;
+    border: 5px solid gainsboro;
+    cursor: pointer;
+}
+
+.buttonMyAccount {
+    margin-right: 10px;
+    width: 155px;
+    height: 63px;
+}
+
+.buttonLog {
+    width: 110px;
+    height: 63px;
+}
