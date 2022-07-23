@@ -140,7 +140,7 @@ body {
 
 .menu_small {
     position: absolute;
-    width: 350px;
+    width: 320px;
     min-height: 200px;
     background-color: #fafbfb;
     z-index: 100;
@@ -269,5 +269,20 @@ body {
     }
     .header__container {
         align-items: center;
+    }
+    .header__logo img {
+        width: 200px;
+    }
+    .menu_small {
+        top: 93px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header__logo img {
+        width: 150px;
+    }
+    .menu_small {
+        top: 75px;
     }
 }
