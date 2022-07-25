@@ -1,0 +1,245 @@
+.container_vocabulary {
+    background-color: #f1f2f2;
+    height: calc(100vh - 130px);
+    padding: 15px 25px;
+}
+
+.vocabulary__title {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+    line-height: 24px;
+}
+
+/* Vocabulary CHOICE BUTTONS  */
+
+.vocabulary__nav {
+    margin-top: 25px;
+    position: relative;
+}
+
+.vocabulary__choice {
+    z-index: 0;
+    position: absolute;
+    background-color: #fff;
+    padding: 12px 10px 15.5px;
+    border-top: 5px solid #e8e8e8;
+    border-left: 5px solid #e8e8e8;
+    border-right: 5px solid #e8e8e8;
+    font-size: 15px;
+    line-height: 17px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    cursor: pointer;
+}
+
+.vocabulary__choice_active {
+    left: 0;
+}
+
+.vocabulary__choice_inactive {
+    left: 180px;
+}
+
+.vocabulary__choice_active {
+    z-index: 150;
+}
+
+/* PANEL  */
+
+.panel {
+    background-color: #fff;
+    min-height: 300px;
+    border: 5px solid #e8e8e8;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 30px 25px;
+    text-align: left;
+    margin-top: 70px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+
+.task__word {
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.task__word-info {
+    font-size: 14px;
+}
+
+.task__explanation {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.task__flag:nth-child(2) {
+    margin-right: 10px;
+}
+
+.task__flag:first-child::after {
+    content: "";
+    background-image: url(../../images/arrow-right.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+.task {
+    max-width: 800px;
+    padding: 15px 20px 20px 0;
+}
+
+/* TASK WRAPPER  */
+
+.task__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.task__container {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 5px;
+    margin-top: 10px;
+}
+
+.task__text {
+    border: 3px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 7px;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.task__number {
+    font-weight: 600;
+    color: #cbbaa4;
+    background-color: #e9e9e9;
+    border-radius: 50%;
+    padding: 2px 10px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+/* TASK PROMPTS  */
+
+.task__prompts {
+    border-top: 3px dotted #e8e8e8;
+    padding: 15px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.task__prompts div:first-child {
+    margin-bottom: 10px;
+}
+
+.task__propmpts-keybord::before {
+    content: "";
+    background-image: url(../../images/keyboard.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 25px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.task__propmpts-send::before {
+    content: "";
+    background-image: url(../../images/send.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 25px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+/* STATISTICS  */
+
+.statistics {
+    border-left: 3px dotted #e8e8e8;
+    padding: 20px;
+}
+
+.statistics__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.statistics__attempts span, .statistics__percent{
+    font-weight: 600;
+}
+
+.statistics__display {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.statistics__bar {
+    height: 30px;
+    width: 250px;
+    background-color: #eeeeee;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.statistics__percent::after {
+    content: "%";
+}
+
+@media screen and (max-width: 921px) {
+    .statistics__display {
+        flex-direction: column-reverse;
+        align-items: center
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .panel {
+        flex-direction: column;
+    }
+    .statistics {
+        border-left: none;
+        border-top: 3px dotted #e8e8e8;
+    }
+    .statistics__display {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .task__container {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+    .task__flag {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .vocabulary__choice_inactive {
+        display: none;
+    }
+}
+
