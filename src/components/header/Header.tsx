@@ -7,7 +7,7 @@ import './Header.css';
 function Header() {
   return (
     <header className="header">
-        <div className="container">
+        <div className="container container_header">
             <div className="header__container">
                 <div className="header__logo">
                     <a href="#">

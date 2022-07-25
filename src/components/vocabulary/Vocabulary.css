@@ -1,7 +1,5 @@
 .container_vocabulary {
-    background-color: #f1f2f2;
-    height: calc(100vh - 130px);
-    padding: 15px 25px;
+    min-height: calc(90vh - 130px);
 }
 
 .vocabulary__title {

@@ -1,0 +1,22 @@
+.footer {
+    background-color: #ebebeb;
+    border-top: 2px solid #ebebeb;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer__links li {
+    margin-right: 10px;
+    text-decoration: underline;
+    color: #fb544e;
+}
+
+@media screen and (max-width: 619px) {
+    .footer__container {
+        flex-direction: column;
+    }
+}
