@@ -8,7 +8,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Vocabulary />
+      <div className="main-content">
+        {/* Components should be here */}
+        {/* Этот див не удалять, нужен чтобы прижать footer */}
+      </div>
       <Footer />
     </div>
   );

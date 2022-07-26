@@ -56,6 +56,17 @@ body {
     color: #151515;
 }
 
+.App {
+    /* чтобы прижать футер к низу */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1 0 auto;
+}
+
 .container {
     max-width: 1170px;
     margin-left: auto;
@@ -71,6 +82,7 @@ body {
 .header {
     min-width: 130px;
     background-color: #fff;
+    flex: 0 0 auto;
 }
 
 .container_header {

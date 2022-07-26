@@ -1,6 +1,7 @@
 .footer {
     background-color: #ebebeb;
     border-top: 2px solid #ebebeb;
+    flex: 0 0 auto;
 }
 
 .footer__container {

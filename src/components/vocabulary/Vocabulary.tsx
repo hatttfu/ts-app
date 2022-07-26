@@ -4,7 +4,7 @@ import englishFlag from "../../images/english-flag.png";
 function Vocabulary() {
   return (
     <div className="vocabulary">
-        <div className="container container_vocabulary">
+        <div className="container">
             <h1 className="vocabulary__title">
                 Learn German to English vocabulary
             </h1>
