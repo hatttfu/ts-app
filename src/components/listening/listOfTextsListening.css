@@ -1,0 +1,136 @@
+.containerListeningTexts {
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid gainsboro;
+    margin-top: 10px;
+}
+
+.contentTexts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentTextsListening__title {
+    flex: 0 0 100%;
+}
+
+.contentTextsListening__title h2 {
+    margin-bottom:20px;
+}
+
+.contentTextsListening__titleAndTest {
+    display: flex;
+    justify-content: space-around;
+    flex: 0 0 100%;
+}
+
+.titleAndText {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 38%;
+}
+
+.blockContent__nameOfTextsAndButton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 0 0 100%;
+}
+
+.nameOfTextsAndButton  {
+    display: flex;
+    flex: 0 0 44%;
+    justify-content: space-between;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    padding-top: 5px;
+}
+
+.nameOfTextsAndButton div a {
+    font-size: 20px;
+    color: red;
+    text-decoration: underline;
+}
+
+.nameOfTextsAndButton p {
+    font-size: 17px;
+}
+
+.nameOfTextsAndButton div button {
+    padding: 8px 16px;
+    font-size: 22px;
+    border: 3px solid gainsboro;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.nameOfTextsAndButton div button:hover {
+    border: 3px solid lightgrey;
+}
+
+.nameOfTextsAndButton div span {
+    padding: 12px 22px;
+    background-color: lightgrey;
+    border: none;
+    border-radius: 10px;
+}
+
+.blockButtonPremium button {
+    padding: 8px 2px;
+    font-size: 18px;
+    border: 3px solid gainsboro;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px 0 20px 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.blockButtonPremium button:hover {
+    border-color: lightgrey;
+}
+
+.nameOfTextsAndButton.premium {
+    display: none;
+}
+
+.nameOfTextsAndButton div a {
+    cursor: pointer;
+}
+.iconPremium {
+    margin-left: 5px;
+    vertical-align: top;
+    padding: 3px 5px;
+    background-color: #656565;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 768px)
+{
+    .nameOfTextsAndButton {
+        flex: 100%;
+    }
+    .titleAndText:first-child {
+        display: none;
+    }
+    .titleAndText:last-child {
+        flex: 0 0 100%;
+        padding-left: 0 ;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .nameOfTextsAndButton div button {
+      display: none;
+    }
+
+    .nameOfTextsAndButton div span {
+        margin-left: 5px;
+    }
+}

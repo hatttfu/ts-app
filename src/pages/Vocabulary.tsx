@@ -1,5 +1,5 @@
-import "./Vocabulary.css";
-import englishFlag from "../../images/english-flag.png";
+import "../components/vocabulary/Vocabulary.css";
+import englishFlag from "../images/english-flag.png";
 
 function Vocabulary() {
   return (

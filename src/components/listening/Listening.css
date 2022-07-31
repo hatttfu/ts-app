@@ -1,0 +1,76 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+.redTriangle {
+    width: 15px;
+}
+
+.listeningDescription {
+    padding-left: 12px;
+}
+
+.listeningDescription h2 {
+    font-size: 26px;
+    padding: 8px 0 5px 0;
+}
+.listeningDescription h3 {
+    font-size: 26px;
+    padding: 0 0 0 5px;
+}
+.listening-list {
+    list-style: disc;
+}
+
+.listeningDescription p {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.listeningDescription button {
+    font-size: 18px;
+    border: 5px solid #eeeeee;
+    background-color: white;
+    padding: 4px 5px 9px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+ }
+
+.listeningDescription ul li {
+    padding: 2px 0;
+    font-size: 18px;
+}
+
+.listeningDescription button:hover {
+    border-color: gainsboro;
+    cursor: pointer;
+}
+
+.photoGirl {
+    padding-left: 10px;
+    margin-left: 3px;
+    width: 40%;
+    height: auto;
+    float: right;
+    border: 10px solid white;
+    border-radius: 10px;
+
+}
+
+
+
+
+

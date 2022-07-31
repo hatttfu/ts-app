@@ -1,0 +1,66 @@
+
+
+h2
+ {
+    margin: 0;
+}
+
+
+
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+.germanFlagTrue {
+    width: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.redTriangle {
+    width: 15px;
+}
+
+.blockAllContent__listeningMainPage__logo {
+    padding-top: 10px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.blockAllContent__listeningMainPage__description {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.blockAllContent__listeningMainPage__buttons {
+    padding-left: 20px;
+}
+
+.blockAllContent__listeningMainPage__buttons button {
+    height: 50px;
+    border: 3px solid gainsboro;
+    border-radius: 10px 10px 0 0;
+    font-size: 20px;
+    background-color: white;
+    border-bottom: none;
+}
+
+.blockAllContent__listeningMainPage__buttons button:hover {
+    background-color: cornsilk;
+    cursor: pointer;
+}
+
+.blockAllContent__listeningMainPage__description {
+    display: flex;
+}
+
+@media screen and (max-width: 650px) {
+    .blockAllContent__listeningMainPage {
+        display: none;
+    }
+}
+
