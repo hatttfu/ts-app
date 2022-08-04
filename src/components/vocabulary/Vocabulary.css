@@ -27,6 +27,10 @@
     cursor: pointer;
 }
 
+.vocabulary__choice:hover {
+    background-color: cornsilk;
+}
+
 .vocabulary__choice_active {
     left: 0;
 }
@@ -54,6 +58,51 @@
     position: relative;
     z-index: 1;
     display: flex;
+}
+
+/* FEEDBACK  */
+
+.feedback {}
+
+.feedback__info {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.feedback__info_wrong::before {
+    content: "";
+    background-image: url(../../images/wrong.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+
+}
+
+.feedback__info_correct::before {
+    content: "";
+    background-image: url(../../images/correct.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+
+}
+
+.feedback__word::after {
+    content: "";
+    background-image: url(../../images/arrow-right.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 17px;
+    margin-left: 3px;
+    vertical-align: middle;
+
 }
 
 .task__word {
@@ -118,6 +167,11 @@
     align-items: center;
     font-size: 18px;
     cursor: pointer;
+}
+
+.task__text:hover {
+    background-color: cornsilk;
+
 }
 
 .task__number {

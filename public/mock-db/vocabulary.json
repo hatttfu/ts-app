@@ -1,0 +1,22 @@
+{
+    "vocabulary": [
+        {
+            "word": "klein",
+            "answers": ["small", "kind", "groomy", "fedya"],
+            "answer": "small",
+            "info": "adjective"
+        },
+        {
+            "word": "schwer",
+            "answers": ["dirty", "heavy", "small", "bad", "fedya"],
+            "answer": "heavy",
+            "info": "adjective"
+        },
+        {
+            "word": "die Eltern",
+            "answers": ["fedya", "bed", "husband", "music", "parents"],
+            "answer": "parents",
+            "info": "noun"
+        }
+    ]
+}

@@ -4,11 +4,13 @@ import {useState} from "react";
 import "./LanguageChoice.css"
 import {ToggleMenuLanguages} from "../toggleMenuLanguages/toggleMenuLanguages";
 
+type LanguageChoiceTypes = {
+    setTask: (string: string) => void,
+    activeTask: string
+}
 
-const LanguageChoice = () => {
+const LanguageChoice = ({setTask, activeTask}: LanguageChoiceTypes ) => {
     const [menuIsOpen, setMenuOpen] = useState<boolean>(false)
-
-    const [activeTask, setTask] = useState<String>('reading')
 
     return (
         <div className="blockAllContent__listeningMainPage">

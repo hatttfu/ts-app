@@ -10,14 +10,17 @@ function App() {
 
   const [languagesVisible, setLanguagesVisible] = useState<boolean>(false)
 
+  const [activeTask, setTask] = useState<string>('reading')
+
   return (
     <div className="App">
       <Header setLanguagesVisible={setLanguagesVisible}  />
       <div className="main-content">
         {/* Components should be here */}
         {/* Этот див не удалять, нужен чтобы прижать footer */}
-        <LanguageChoice />
-        <Vocabulary />
+        <LanguageChoice setTask={setTask} activeTask={activeTask} />
+        {activeTask == "vocabulary" && <Vocabulary />}
+        {activeTask == "listening" && <Listening />}
       </div>
 
       <Footer />
