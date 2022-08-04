@@ -3,7 +3,7 @@ import Header from './components/header/Header'
 import Vocabulary from './pages/Vocabulary';
 import Footer from './components/footer/Footer';
 import Listening from './pages/Listening';
-import {ToggleMenuLanguages} from './components/toggleMenuLanguages/toggleMenuLanguages'
+import LanguageChoice from './components/languageChoice/LanguageChoice';
 
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
       <div className="main-content">
         {/* Components should be here */}
         {/* Этот див не удалять, нужен чтобы прижать footer */}
-        <Listening />
+        <LanguageChoice />
+        <Vocabulary />
       </div>
 
       <Footer />

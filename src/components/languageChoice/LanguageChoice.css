@@ -1,12 +1,7 @@
-
-
 h2
  {
     margin: 0;
 }
-
-
-
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
@@ -44,9 +39,14 @@ body {
     height: 50px;
     border: 3px solid gainsboro;
     border-radius: 10px 10px 0 0;
-    font-size: 20px;
+    font-size: 18px;
     background-color: white;
     border-bottom: none;
+}
+
+.blockAllContent__listeningMainPage__buttons .button_active {
+    background-color: #f1f2f2;
+    font-weight: 600;
 }
 
 .blockAllContent__listeningMainPage__buttons button:hover {
