@@ -8,12 +8,12 @@ function Vocabulary() {
             <h1 className="vocabulary__title">
                 Learn German to English vocabulary
             </h1>
-            <div className="vocabulary__nav">
+            <div className="vocabulary__nav timer">
                 <button className="vocabulary__choice vocabulary__choice_inactive">
                     passive vocabulary
                 </button>
-                <button className="vocabulary__choice vocabulary__choice_active">
-                    active vocabulary
+                <button className="vocabulary__choice vocabulary__choice_active timer">
+                    <div className="timer">active vocabulary</div>
                 </button>
             </div>
             <div className="vocabulary__panel panel">
