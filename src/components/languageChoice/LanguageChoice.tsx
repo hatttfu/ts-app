@@ -4,12 +4,11 @@ import {useState} from "react";
 import "./LanguageChoice.css"
 import {ToggleMenuLanguages} from "../toggleMenuLanguages/toggleMenuLanguages";
 
-type LanguageChoiceTypes = {
-    setTask: (string: string) => void,
-    activeTask: string
-}
+import {
+    Link
+  } from 'react-router-dom';
 
-const LanguageChoice = ({setTask, activeTask}: LanguageChoiceTypes ) => {
+const LanguageChoice = () => {
     const [menuIsOpen, setMenuOpen] = useState<boolean>(false)
 
     return (
@@ -26,10 +25,13 @@ const LanguageChoice = ({setTask, activeTask}: LanguageChoiceTypes ) => {
                     </div>
                 </div>
                 <div className="blockAllContent__listeningMainPage__buttons">
-                    <button className={activeTask == "reading" ? "buttonReading button_active" : "buttonReading"} onClick={() => setTask('reading')}>Reading</button>
-                    <button className={activeTask == "listening" ? "buttonListening button_active" : "buttonListening"} onClick={() => setTask('listening')}>Listening</button>
-                    <button className={activeTask == "dictation" ? "buttonDictation button_active" : "buttonDictation"} onClick={() => setTask('dictation')}>Dictation</button>
-                    <button className={activeTask == "vocabulary" ? "buttonVocabulary button_active" : "buttonVocabulary"} onClick={() => setTask('vocabulary')}>Vocabulary</button>
+                    {/* вот так не работает в инете пока не нашла */}
+                    {/* <Link className={(navigationData) => navigationData.isActive ? "buttonReading button_active" : "buttonReading"} to="/reading"><button>Reading</button></Link> */}
+
+                    <Link className="buttonReading" to="/reading"><button>Reading</button></Link>
+                    <Link className="buttonListeningy button_active" to="/listening"><button>Listening</button></Link>
+                    <Link className="buttonDictationy button_active" to="/dictation"><button>Dictation</button></Link>
+                    <Link className="buttonVocabulary button_active" to="/vocabulary"><button>Vocabulary</button></Link>
                 </div>
             </div>
             <ToggleMenuLanguages menuIsOpen={menuIsOpen}/>

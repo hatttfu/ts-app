@@ -168,7 +168,7 @@ body {
     width: 320px;
     min-height: 200px;
     background-color: #fafbfb;
-    z-index: 100;
+    z-index: 100000;
     right: 0;
     top: 125px;
     padding: 20px;
@@ -218,8 +218,12 @@ body {
 }
 
 .activities__language {
-    margin-right: 25px;
+    margin-right: 20px;
     cursor: pointer;
+}
+
+.activities__language:hover {
+    background-color: rgb(237, 226, 187);
 }
 
 .activities__language, .language__content {
@@ -288,6 +292,12 @@ body {
 
 .menu_small.active {
     display: block;
+}
+
+@media screen and (min-width: 650px) {
+    .menu_small.active {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 650px) {
