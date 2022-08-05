@@ -17,6 +17,12 @@
             "answers": ["fedya", "bed", "husband", "music", "parents"],
             "answer": "parents",
             "info": "noun"
+        },
+        {
+            "word": "das Bett",
+            "answers": ["tea", "bed", "wife", "fedya", "tree"],
+            "answer": "bed",
+            "info": "noun"
         }
     ]
 }
