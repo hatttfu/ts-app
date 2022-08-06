@@ -23,6 +23,19 @@
             "answers": ["tea", "bed", "wife", "fedya", "tree"],
             "answer": "bed",
             "info": "noun"
+        },
+        {
+            "word": "müde",
+            "answers": ["heavy", "tired", "fedya", "bad", "happy"],
+            "answer": "tired",
+            "info": "adjective"
+        },
+        {
+            "word": "rot",
+            "answers": ["red", "fedya", "green", "love", "pain"],
+            "answer": "red",
+            "info": "adjective"
         }
-    ]
+    ],
+    "german": ["ä", "ö", "ü", "ß", "Ä", "Ö", "Ü"]
 }
